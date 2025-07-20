@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="DoppDrive"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>DoppDrive (ICCV 2025)</title>
+<!--  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">-->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <!-- MathJax for LaTeX in HTML -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
+
+</head>
+<body>
+
+
+  <section class="hero hero-title">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">DoppDrive: Doppler-Driven Temporal Aggregation
+              for Improved Radar Object Detection</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=Gsa-kwkAAAAJ&hl=en&oi=ao" target="_blank">Yuval Haitman</a><sup>*&#8224</sup> and </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=g_N629oAAAAJ&hl=en" target="_blank">Oded Bialer</a><sup>*</sup></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">General Motors, Technical Center Israel<br>ICCV 2025</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="eql-cntrb"><small><br><sup>&#8224</sup>Author is also with the School of Electrical and Computer Engineering in Ben Gurion University of the Negev.</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                         class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/yuvalHG/RadSimReal" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Teaser Section (TLDR + Image) -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-vcentered">
+      <!-- TLDR Text -->
+      <div class="column is-half">
+        <h2 class="title is-3">TL;DR</h2>
+        <p style="font-size: 1.1em; line-height: 1.5;">
+          <i><strong>DoppDrive</strong></i> is a Doppler-driven temporal aggregation method for radar point clouds that increases point density and reduces scatter from dynamic objects. This leads to significantly improved object detection—especially at long ranges. Compatible with any detector, DoppDrive is validated across multiple datasets and introduces <strong>LRR-Sim</strong>, a new 300m-range radar dataset for autonomous driving.
+        </p>
+      </div>
+
+      <!-- Teaser Image -->
+      <div class="column is-half has-text-centered">
+        <figure class="image">
+          <img src="static/images/teaser.png" alt="Teaser Figure" style="max-width: 100%; height: auto; border: 1px solid #ccc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+          <figcaption style="font-size: 0.9em; margin-top: 0.5em;"><b>Object detection with different input point clouds:</b> (1) single frame, highly sparse point cloud, (2) temporally aggregated with ego-motion compensation—scattered points from dynamic objects, (3) Doppler-driven aggregation—dense points with minimal scatter, enhancing object detection.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- Title above carousel -->
+      <div class="has-text-centered" style="margin-bottom: 0.5em; padding-bottom: 0;">
+        <h2 class="title is-3">Comparison of radar point cloud aggregation methods</h2>
+        <p class="subtitle is-5">
+          <b>Left:</b> No aggregation. <b>Middle:</b> Our DoppDrive (Doppler-based dynamic aggregation). <b>Right:</b> Naive aggregation (ego-motion compensation only).
+        </p>
+      </div>
+
+      <!-- Carousel -->
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item has-text-centered">
+            <img src="static/images/vid1.gif" alt="DoppDrive Comparison Frame 1"/>
+          </div>
+          <div class="item has-text-centered">
+            <img src="static/images/vid2.gif" alt="DoppDrive Comparison Frame 2"/>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Caption below carousel -->
+      <div class="caption" style="text-align:center; margin:auto; margin-top: 1.5em;">
+        <span style="color:#1f77b4; font-weight:bold;">●</span> Blue points: Dynamic radar reflections,
+        <span style="color:#ff7f0e; font-weight:bold;">●</span> Orange points: Static radar reflections,
+        <span style="color:#888; font-weight:bold;">●</span> Gray points: LIDAR points,
+        <span style="color:magenta; font-weight:bold;">▭</span> Magenta boxes: Ground truth object annotations.<br>
+        DoppDrive achieves denser and more accurate aggregation of dynamic objects compared to both no aggregation and naive aggregation.
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Radar-based object detection is essential for autonomous driving due to radar's long detection range. However, the sparsity of radar point clouds, especially at long range, poses challenges for accurate detection. Existing methods increase point density through temporal aggregation with ego-motion compensation, but this approach introduces scatter from dynamic objects, degrading detection performance. We propose <i>DoppDrive</i>, a novel Doppler-Driven temporal aggregation method that enhances radar point cloud density while minimizing scatter. Points from previous frames are shifted radially according to their dynamic Doppler component to eliminate radial scatter, with each point assigned a unique aggregation duration based on its Doppler and angle to minimize tangential scatter. <i>DoppDrive</i> is a point cloud density enhancement step applied before detection, compatible with any detector, and we demonstrate that it significantly improves object detection performance across various detectors and datasets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero">
+  <div class="hero-body has-text-centered">
+    <h2 class="title is-3">Method</h2>
+     <div class="container column is-four-fifths">
+    <img src="static/images/method_figure4_cropped-page-001.jpg" width="50%" alt="Method Overview"/>
+       <h2 class="subtitle has-text-centered">
+                         <br>
+         <b>Overview of the Doppler-driven temporal aggregation method.</b>
+  (a) Top view of the scenario with the radar-equipped host vehicle and a dynamic vehicle moving toward each other.
+  Points from previous frames \( T_{-1} \) and \( T_{-K} \) are aggregated with the current frame \( T_0 \), compensating for the dynamic vehicle's motion by shifting points along the radial direction based on their dynamic Doppler measurement.
+  (b) Zoom-in on (a), showing the accurate shift \( \boldsymbol{q}^i_k \) vs. the approximated shift \( \tilde{\boldsymbol{q}}^i_k \), with resulting offset distance \( \epsilon^i_k \).
+  (c) Result of our aggregation method, showing denser reflection points with minimal disparity where the aggregation duration of \( \tilde{\boldsymbol{q}}^i_{-K} \) yields an expected offset beyond the tolerated limit, so it is discarded.
+  (d) Result of standard aggregation, showing significant scatter in the aggregated points.
+        </h2>
+  </div>
+  </div>
+
+
+</section>
+<!-- End image carousel -->
+
+
+
+
+
+  <section class="hero is-small is-light">
+  <div class="hero-body is-center has-text-centered">
+    <div class="container">
+      <h2 class="title is-3">Experimental Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <!-- First item: qualitative image -->
+        <div class="item">
+          <img src="static/images/qualitative_results.png" width="75%"/>
+          <h2 class="subtitle has-text-centered">
+            <br>
+            <b>Qualitative examples demonstrating <i>DoppDrive</i> in two scenarios:</b> (a) from the aiMotive dataset (b) from <i>LRR-Sim</i>. Columns show: (left) Sparse point cloud without aggregation, leading to missed detections; (center) Aggregation with ego-motion compensation, causing scattered points around dynamic objects and inaccuracies in object size and position; (right) <i>DoppDrive</i> enhances density around dynamic objects (blue points) with minimal scatter, improving detection accuracy.
+          </h2>
+        </div>
+
+        <!-- Second item: HTML table -->
+        <div class="item">
+          <div class="box" style="padding: 1.5rem;">
+            <h2 class="title is-4">Object Detection Accuracy (AP) Across Datasets</h2>
+            <div class="table-container">
+              <table class="table is-bordered is-striped is-hoverable is-fullwidth is-size-7-mobile is-size-6-tablet">
+                <thead>
+                  <tr>
+                    <th rowspan="2">Method</th>
+                    <th colspan="4">aiMotive</th>
+                    <th colspan="4">Radial</th>
+                    <th colspan="4">LRR-Sim</th>
+                  </tr>
+                  <tr>
+                    <th>SMF</th><th>KRD</th><th>RPNet</th><th>NVR</th>
+                    <th>SMF</th><th>KRD</th><th>RPNet</th><th>NVR</th>
+                    <th>SMF</th><th>KRD</th><th>RPNet</th><th>NVR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>No Aggregation</td>
+                    <td>74.6</td><td>75.0</td><td>73.4</td><td>70.9</td>
+                    <td>91.3</td><td>91.4</td><td>91.0</td><td>89.3</td>
+                    <td>89.2</td><td>88.7</td><td>88.7</td><td>86.6</td>
+                  </tr>
+                  <tr>
+                    <td>Standard Aggregation</td>
+                    <td>81.7</td><td>82.3</td><td>80.2</td><td>75.2</td>
+                    <td>92.5</td><td>92.1</td><td>92.3</td><td>91.2</td>
+                    <td>91.1</td><td>89.9</td><td>90.8</td><td>90.1</td>
+                  </tr>
+                  <tr>
+                    <td><i>DoppDrive (Ours)</i></td>
+                    <td><b>89.1</b></td><td><b>89.4</b></td><td><b>87.8</b></td><td><b>81.8</b></td>
+                    <td><b>95.8</b></td><td><b>95.5</b></td><td><b>95.7</b></td><td><b>94.1</b></td>
+                    <td><b>93.3</b></td><td><b>93.1</b></td><td><b>92.9</b></td><td><b>92.7</b></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="has-text-justified is-size-7" style="margin-top: 0.5em;">
+                <b>Table:</b> Average Precision (AP) of four detectors: SMURF (SMF), K-Radar (KRD), Radar PillarNet (RPNet), and Nvradarnet (NVR).
+                Results are evaluated across three datasets (<b>aiMotive</b>, <b>Radial</b>, <b>LRR-Sim</b>) using no aggregation, ego-motion-based standard aggregation, and the proposed <i>DoppDrive</i>.
+              </p>
+              <p class="has-text-left is-size-7" style="margin-top: 1em;">
+  <b>References:</b><br>
+  [1] Liu et al., "<i>Spatial Multi-scale Feature Aggregation for Radar Object Detection</i>", CVPR 2023. (SMF)<br>
+  [2] Paek et al., "<i>Enhanced Radar Object Detection Using Multi-Scale Knowledge Distillation</i>", ICRA 2023. (KRD)<br>
+  [3] Zheng et al., "<i>RCFusion: Radar-Camera Fusion for Robust Object Detection in All Weather Conditions</i>", ECCV 2022. (RPNet)<br>
+  [4] Popov et al., "<i>Neural Velocity Radar Network for All-Weather Object Detection</i>", NeurIPS 2023. (NVR)
+</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+  <!-- LRRSim Dataset -->
+<!-- LRRSim Dataset -->
+<section class="hero">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <!-- Title -->
+      <div class="has-text-centered" style="margin-bottom: 0.5em; padding-bottom: 0;">
+        <h2 class="title is-3">The LRR-Sim Dataset</h2>
+      </div>
+
+      <!-- Carousel -->
+      <div class="container">
+        <div id="lrrsim-carousel" class="carousel results-carousel">
+
+          <!-- Item 1: First video -->
+          <div class="item has-text-centered">
+            <video autoplay loop muted playsinline width="100%">
+              <source src="static/videos/LRR_Sim1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Item 2: Second video -->
+          <div class="item has-text-centered">
+            <video autoplay loop muted playsinline width="100%">
+              <source src="static/videos/LRR_Sim2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+           <!-- Item 3: Second video -->
+          <div class="item has-text-centered">
+            <video autoplay loop muted playsinline width="100%">
+              <source src="static/videos/LRR_Sim3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Item 4: Three enlarged figures -->
+          <div class="item has-text-centered">
+            <div class="columns is-centered is-vcentered">
+              <div class="column">
+                <img src="static/images/lrrsim_table.png" alt="LRR-Sim Table" style="width:100%;">
+              </div>
+              <div class="column">
+                <img src="static/images/lrrsim_dist.png" alt="LRR-Sim Distribution" style="width:100%;">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+     <!-- Description below carousel -->
+<div class="content has-text-justified" style="margin-top: 1.5em;">
+  <p style="font-size: 1.05em;">
+  <b>LRR-Sim</b> is the first publicly available <b>long-range radar dataset</b> with annotated 3D point clouds extending up to <b>300 meters</b>, filling a critical gap in radar research for highway and high-speed scenarios. It includes <b>~25K training</b> and <b>~5K testing frames</b> across 50 simulated highway scenes, with a total of <b>~137K annotated vehicles</b> — including <b>~25K vehicles beyond 175m</b>, where conventional sensors struggle. Scenes were created using the <a href="https://carla.org" target="_blank"><b>CARLA simulator</b></a> for realistic world modeling and highway maps, with a high-fidelity radar simulation applied on top to generate 77GHz MIMO radar point clouds. All objects within ±55° azimuth and ±20° elevation are annotated with accurate 3D bounding boxes.
+</p>
+<p style="font-size: 1.05em;">
+  <a href="https://github.com/yuvalHG/LRRSim" target="_blank"><b>Visit LRR-Sim dataset GitHub</b></a> for dataset download, technical details, and visualizations.
+</p>
+
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Paper poster -->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title">Poster</h2>-->
+
+<!--      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">-->
+<!--          </iframe>-->
+<!--        -->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+<!--  <section class="section" id="BibTeX">-->
+<!--    <div class="container is-max-desktop content">-->
+<!--      <h2 class="title">BibTeX</h2>-->
+<!--      <pre><code>BibTex Code Here</code></pre>-->
+<!--    </div>-->
+<!--</section>-->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
