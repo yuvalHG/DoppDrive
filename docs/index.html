@@ -4,23 +4,20 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
+  <meta name="description" content="DoppDrive: Doppler-Driven Temporal Aggregation
+              for Improved Radar Object Detection (ICCV 2025)">
   <meta property="og:title" content="DoppDrive"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:description" content="DoppDrive: Doppler-Driven Temporal Aggregation
+              for Improved Radar Object Detection"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -102,7 +99,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/yuvalHG/RadSimReal" target="_blank"
+                    <a href="https://github.com/yuvalHG/LRRSim" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -215,7 +212,7 @@
   <div class="hero-body has-text-centered">
     <h2 class="title is-3">Method</h2>
      <div class="container column is-four-fifths">
-    <img src="static/images/method.png" width="50%" alt="Method Overview"/>
+    <img src="static/images/method_figure4_cropped-page-001.jpg" width="50%" alt="Method Overview"/>
        <h2 class="subtitle has-text-centered">
                          <br>
          <b>Overview of the Doppler-driven temporal aggregation method.</b>
@@ -369,7 +366,7 @@
      <!-- Description below carousel -->
 <div class="content has-text-justified" style="margin-top: 1.5em;">
   <p style="font-size: 1.05em;">
-  <b>LRR-Sim</b> is the first publicly available <b>long-range radar dataset</b> with annotated 3D point clouds extending up to <b>300 meters</b>, filling a critical gap in radar research for highway and high-speed scenarios. It includes <b>~18K training</b> and <b>~3K testing frames</b> across 50 simulated highway scenes, with a total of <b>~160K annotated vehicles</b> — including <b>~28K vehicles beyond 175m</b>, where conventional sensors struggle. Scenes were created using the <a href="https://carla.org" target="_blank"><b>CARLA simulator</b></a> for realistic world modeling and highway maps, with a high-fidelity radar simulation applied on top to generate 77GHz MIMO radar point clouds. All objects within ±55° azimuth and ±20° elevation are annotated with accurate 3D bounding boxes.
+  <b>LRR-Sim</b> is the first publicly available <b>long-range radar dataset</b> with annotated 3D point clouds extending up to <b>300 meters</b>, filling a critical gap in radar research for highway and high-speed scenarios. It includes <b>~25K training</b> and <b>~5K testing frames</b> across 50 simulated highway scenes, with a total of <b>~137K annotated vehicles</b> — including <b>~25K vehicles beyond 175m</b>, where conventional sensors struggle. Scenes were created using the <a href="https://carla.org" target="_blank"><b>CARLA simulator</b></a> for realistic world modeling and highway maps, with a high-fidelity radar simulation applied on top to generate 77GHz MIMO radar point clouds. All objects within ±55° azimuth and ±20° elevation are annotated with accurate 3D bounding boxes.
 </p>
 <p style="font-size: 1.05em;">
   <a href="https://github.com/yuvalHG/LRRSim" target="_blank"><b>Visit LRR-Sim dataset GitHub</b></a> for dataset download, technical details, and visualizations.
